@@ -14,7 +14,7 @@ $('#dropdown-menu').click(function(event) {
     event.stopPropagation();
 });
 
-// smooth transition to each sections when clicked on nav links
+// smooth transition to each section when clicked on nav links
 $(document).ready(function(){
     $('#dropdown-menu a').on('click', function(e) {
         e.preventDefault();
@@ -23,6 +23,22 @@ $(document).ready(function(){
         if(target.length){
             $('html, body').animate({scrollTop: target.offset().top}, '700', 'linear');
         }
+    });
+});
+
+// smooth transition to contact when link is clicked in Bio
+$(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
     });
 });
 
