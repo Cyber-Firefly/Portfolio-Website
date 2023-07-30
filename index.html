@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Normalize Css Added -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Libre+Caslon+Text&family=Montserrat:wght@400;600&family=Play&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>COMP1054-CSS-Final Project</title>
+    <meta name="description" content="Developer: John Gu - 200327450">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <nav>
+                <ul class="icon-holder">
+                    <li class="menu-toggle">
+                        <img id="navigation-icon" src="./assets/nav-icon-masked.png" alt="nav icon">
+                        <!-- Dropdown Menu -->
+                        <ul id="dropdown-menu" class="hidden">
+                            <li><a href="#about-me">ABOUT ME</a></li>
+                            <li><a href="#projects">PROJECTS</a></li>
+                            <li><a href="#skills">SKILLS</a></li>
+                            <li><a href="#contact-me">CONTACT ME</a></li>
+                        </ul>
+                    </li>
+                    <img id="dark-light-switch" src="./assets/dark-light-mode.webp" alt="dark-light switch">
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="header-text">
+            <h1>Greetings! I am John Gu!</h1>
+            <p>A Software Developer with a passion of Game Development.</p>
+        </div>
+        <section id="about-me">
+            <h2>ABOUT ME</h2>
+            <div class="article-holder"> <!--Make this a grid-->
+                <article class="bio">
+                    <h3>Bio:</h3>
+                    <p>Born and raised in Beijing, China, I have now spent over 8 years in Canada, making Barrie my second home. I am currently a student at Georgian College where I am pursuing a degree in Computer Programming. My ambition is to merge my passion for technology with creativity by specializing in video game development.</p>
+                    <p>Beyond the realm of programming, I maintain an active lifestyle and have a passion for culinary arts. I enjoy an array of sports, from basketball and soccer to badminton, which keeps me energized and motivated. In the kitchen, I love exploring new recipes and honing my cooking skills.</p>
+                    <p>am eager to connect and welcome opportunities to collaborate on interesting projects. Please feel free to reach out to me through the contact information provided in the <a href="#contact-me">CONTACT ME</a> section. I look forward to hearing from you soon.</p>
+                </article>
+                <article class="experience">
+                    <h3>Experience:</h3>
+                    <p>Throughout my diverse career, I have embraced a multitude of roles. My journey started in China where I obtained a Bachelor's Degree in Building Electricity and Intelligence. An opportunity to explore Tourism and Travel then brought me to Canada, where I became an alumnus of Georgian College. I subsequently transitioned into the hospitality industry, honed my skills as a realtor, and am now delving deep into the realm of Computer Programming.</p>
+                    <p>Each phase of my career, while distinct, has been equally intriguing and rewarding. These transitions often surprise people due to their apparent disparity. However, I perceive each venture as interconnected, with each experience enriching the subsequent ones.</p>
+                    <p>Every role has equipped me with a unique skill set, while also contributing to my cumulative personal and professional growth. These diverse experiences have broadened my perspective and fostered adaptability, preparing me to navigate and excel in various fields.</p>
+                    <p>As I now turn towards the dynamic world of computer programming, I am excited to apply my multifaceted background and problem-solving abilities to new challenges in this domain.</p>
+                </article>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>PROJECTS</h2>
+            <div class="projects-holder"> <!-- Make this a flexbox row -->
+                <div class="csharp-proj">
+                    <h4><a href="https://www.loom.com/share/7d2dfaca51c3448885f60648f2cc5d42?sid=67678997-9be4-4a31-afd2-b611f1608ac3" target="_blank">Gladiator Game</a></h4>
+                    <p class="proj1">A C#, text-based, PVE game with a varied weapons choices offers a high replay-ability (100% Mark)</p>
+                </div>
+                <div class="html-proj">
+                    <h4><a href="https://johngu0209.github.io/Retro-Website-Galaga/index.html" target="_blank">Retro Website</a></h4>
+                    <p class="proj2">A 4-page website design of a product existed before the Internet was invented. The product I chose is the classic video game Galaga. (100% Mark)</p>
+                </div>
+                <div class="iot-proj">
+                    <h4><a href="https://github.com/JohnGu0209/Gladiator-Arduino-Implementation">Gladiator Game 2.0</a></h4>
+                    <p class="proj3">An implementation of my C# project into Arduino Uno, using C++ language on TinkerCAD. Introducing Class system of choosing different gliadiator class with unique skill system. Enhanced gameplay experience. (96% Mark)</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>TECHNICAL SKILLS</h2>
+            <div class="skills-holder"> <!-- Make this flexbox row -->
+                <h5>C#</h5>
+                <h5>Unity</h5>
+                <h5>Python</h5>
+                <h5>Java</h5>
+                <h5>MySQL</h5>
+                <h5>Web Design</h5>
+                <h5>Java Script</h5>
+                <h5>Communications</h5>
+                <h5>Customer Service</h5>
+                <h5>C++</h5>
+            </div>
+        </section>
+        <section id="contact-me">
+            <h2>CONTACT ME</h2>
+            <div class="contact-holder">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/john-gu-8aa252180/" target="_blank">Linked-In</a></li>
+                    <li><a href="https://github.com/JohnGu0209" target="_blank">GitHub</a></li>
+                    <li><a href="mailto:john.gu@yahoo.com">Email</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Designed and Developed by John Gu</h2>
+        <button id="scrollToTop">HOME PAGE</button>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
