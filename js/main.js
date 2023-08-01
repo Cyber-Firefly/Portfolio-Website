@@ -26,6 +26,25 @@ $(document).ready(function(){
     });
 });
 
+//type out animation
+let i = 0;
+let txt = 'A Software Developer with a passion for Game Development.';
+let speed = 100;
+
+function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("type-animation").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    } else {
+        // after the text is fully typed, start blinking the cursor
+        document.getElementById("cursor").classList.add('blinking');
+    }
+}
+
+window.onload = typeWriter;
+
+
 // smooth transition to contact when link is clicked in Bio
 $(document).ready(function(){
     $('a[href^="#"]').on('click',function (e) {
