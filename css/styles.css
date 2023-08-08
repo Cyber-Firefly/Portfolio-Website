@@ -86,6 +86,11 @@ h1::after {
     list-style: none;
 }
 
+#dark-light-switch {
+    width: 100%;
+    height: 100%;
+}
+
 .header-text {
     font-family: 'EB Garamond', serif;
     font-size: 1.5rem;
@@ -169,18 +174,13 @@ main section,
     background-color: #CBC9D8;
 }
 
-#about-me {
-    height: 100%;
-    width: 80%;
-}
-
 #contact-me {
     padding:0
 }
 
 .article-holder {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
     height: auto;
     width: auto;
 }
@@ -194,6 +194,16 @@ article p {
     line-height: 1.5;
 }
 
+.image-holder {
+    width:50%;
+    height: auto;
+}
+
+.image-holder img {
+    height: auto;
+    width: 100%;
+}
+
 .bio a {
     text-decoration: none;
     color: #0e0e0e;
@@ -201,6 +211,11 @@ article p {
 
 .bio a:visited {
     color: #0e0e0e;
+}
+
+.image-holder {
+    justify-self: center;
+    align-self: start;
 }
 
 .projects-holder {
@@ -442,7 +457,9 @@ body.dark-mode #dropdown-menu a {
     color: #fefefe;
 }
 
-
+body.dark-mode .shooting-star {
+    background-color: #f9f9f9;
+}
 
 body.dark-mode .bio a {
     color: #fefefe;
@@ -479,6 +496,23 @@ body.dark-mode #footer-text {
 
 /* After default mobile first design, add tablet design*/
 @media screen and (min-width: 40em) {
+
+    .article-holder {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .image-holder {
+        align-self: center;
+        justify-self: center;
+        width:100%;
+        height: auto;
+    }
+
+    .bio p {
+        padding: 0 2rem;
+    }
 
     .skills-holder {
         display: grid;
@@ -566,6 +600,23 @@ body.dark-mode #footer-text {
 /* Lastly, add desktop design */
 @media screen and (min-width: 70em) {
 
+    .article-holder {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .image-holder {
+        align-self: center;
+        justify-self: center;
+        width: 75%;
+        height: auto;
+    }
+
+    .bio p {
+        padding: 0 2rem;
+    }
+
     .projects-holder {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -601,6 +652,15 @@ body.dark-mode #footer-text {
         padding:2px;
         transform:scale(1.2);
         z-index: 1;
+    }
+
+    .skills-holder {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
     }
 
     .skills-holder h5:hover {
