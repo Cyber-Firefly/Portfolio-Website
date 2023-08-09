@@ -14,7 +14,7 @@
 :root {
     --linkedin-icon: url('../assets/linkedin-light.png');
     --github-icon: url('../assets/github-icon-light.webp');
-    --mail-icon: url('../assets/mail-icon-light.webp');
+    --mail-icon: url('../assets/email-icon-light-masked.png');
 }
 
 .dark-mode {
